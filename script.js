@@ -1,5 +1,3 @@
-
-
 const topScreen = document.querySelector("#screen-top");
 const bottomScreen = document.querySelector("#screen-bottom");
 let lastInput = [];
@@ -8,8 +6,6 @@ let num2 = 0;
 let operator = "";
 let result = 0;
 let summed = false;
-
-
 
 const add = function (a, b) {
     return a + b;
@@ -26,7 +22,6 @@ const multiply = function (a, b) {
 const divide = function (a, b) {
     return a / b;
 };
-
 
 const operate = function () {
     num2 = Number(lastInput.join("").toString());
@@ -87,7 +82,6 @@ const selectOperator = function (btn) {
         
     }
 }
-
 
 const checkIfFloat = function (num) {
     if(Number.isInteger(num)) {
